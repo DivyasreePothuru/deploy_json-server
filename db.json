@@ -1,15 +1,558 @@
 {
-    "users":
-    [
-        {
-            "id": 1,
-            "name": "John",
-            "email": "john@email.com"
-        },
-        {
-            "id": 2,
-            "name": "jane",
-            "email": "jane@email.com"
-        }
-    ]
+  "countries": [
+    {
+      "id": 1,
+      "name": "India",
+      "img": "https://media.istockphoto.com/id/177387875/photo/indian-flag.jpg?s=612x612&w=0&k=20&c=3rRebXau-B-6VA-AJXgRK0awMNOI351Y17_thFK_YmM="
+    },
+    {
+      "id": 2,
+      "name": "Argentina",
+      "img": "https://img.freepik.com/premium-photo/close-up-realistic-texture-flag-argentina_267895-3143.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Spain",
+      "img": "https://m.media-amazon.com/images/I/615oIig3AoL._AC_SL1500_.jpg"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Suhag",
+      "image": "https://imgmedia.lbb.in/media/2018/10/5bcdbbcef00ac61a88683405_1540209614595.jpg",
+      "Address": "32Balanstrasse,Munich-81541",
+      "country_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Mehak",
+      "image": "https://static.toiimg.com/photo/66099555.cms",
+      "Address": "63 Pasing,Munich-81532",
+      "country_id": 1
+    },
+    {
+      "id": 3,
+      "name": "El Gaucho",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/06/8b/f6/91/getlstd-property-photo.jpg",
+      "Address": "4 Marienplatz,Munich-81501",
+      "country_id": 2
+    },
+    {
+      "id": 4,
+      "name": "Rusticana",
+      "image": "https://magazine.winerist.com/images/uploads/Ruca_Malen_Best_restaurants_in_Mendoza_Winerist.jpg",
+      "Address": "63 Pasing,Munich-81532",
+      "country_id": 2
+    },
+    {
+      "id": 5,
+      "name": "Marmaris",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/1a/ee/95/9d/marmaris-grills-and-signatures.jpg",
+      "Address": "10 Ostbanhof,Munich-81599",
+      "country_id": 3
+    },
+    {
+      "id": 6,
+      "name": "Amistad",
+      "image": "https://gttp.imgix.net/352610/x/0/14-best-pampanga-restaurants-kapampangan-food-best-sisig-buffet-fine-dining-private-dining-28.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883",
+      "Address": "63 Pasing,Munich-81532",
+      "country_id": 3
+    },
+    {
+      "id": 7,
+      "name": "Chai Point",
+      "image": "https://imgmedia.lbb.in/media/2020/9/20c6a072-4a62-4a97-b88d-eb5d6e046144.jpg",
+      "Address": "63 Lulumall,Munich-81531",
+      "country_id": 1
+    },
+    {
+      "id": 8,
+      "name": "Chat",
+      "image": "https://content.jdmagicbox.com/comp/hyderabad/k8/040pxx40.xx40.160709133707.u7k8/catalogue/shivling-chat-bandar-hyderabad-nhlf4gttrq.jpg?clr=333333",
+      "Address": "6 laim,Munich-81231",
+      "country_id": 1
+    },
+    {
+      "id": 9,
+      "name": "Cardoba",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "Address": "63 Lulumall,Munich-81531",
+      "country_id": 2
+    },
+    {
+      "id": 10,
+      "name": "Salta",
+      "image": "https://www.saltainbocca.ch/wp-content/uploads/Logo-SaltaInBocca-RGB.png",
+      "Address": "6 laim,Munich-81231",
+      "country_id": 2
+    },
+    {
+      "id": 11,
+      "name": "Ole Madrid",
+      "image": "https://isarchitecture.com/site/wp-content/uploads/ole-madrid-1.jpg",
+      "Address": "Ole Madrid Häberlstraße 15 80337",
+      "country_id": 3
+    },
+    {
+      "id": 12,
+      "name": "Roecklplatz",
+      "image": "https://roecklplatz.de/wp-content/uploads/2022/02/Roeckl_Restaurant_MUC2021_236b.jpg",
+      "Address": "Roecklplatz Isartalstraße 26 80469",
+      "country_id": 3
+    }
+  ],
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Butterchicken",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2021/02/butter-chicken-ac2ff98.jpg",
+      "restaurant_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Dosa",
+      "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "restaurant_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Idly",
+      "image": "https://assets.cntraveller.in/photos/627a4112cbc04ca509426501/4:3/w_2932,h_2199,c_limit/Vegetarian%20South%20Indian%20breakfast%20thali%20-%20Idli%20vada%20sambar%20chutney%20-%20Image%20ID%202H3783R%20(RF).jpg",
+      "restaurant_id": 2
+    },
+    {
+      "id": 4,
+      "name": "Biryani",
+      "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/hyderabadi-biryani-recipe-chicken.jpg",
+      "restaurant_id": 2
+    },
+    {
+      "id": 5,
+      "name": "Matambre",
+      "image": "https://img-global.cpcdn.com/recipes/d3fbd47f9e5ccd23/400x400cq70/photo.jpg",
+      "restaurant_id": 3
+    },
+    {
+      "id": 6,
+      "name": "Empanadas",
+      "image": "https://blog.amigofoods.com/wp-content/uploads/2019/04/argentinian-empanadas-1.jpg",
+      "restaurant_id": 3
+    },
+    {
+      "id": 7,
+      "name": "Milanesas",
+      "image": "https://i.blogs.es/24b549/como-hacer-milanesas-de-pollo-2-/1366_2000.jpg",
+      "restaurant_id": 4
+    },
+    {
+      "id": 8,
+      "name": "Flan con dulce de leche",
+      "image": "https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/71653e12621f2f3fa7b2c124a822f5e6.png",
+      "restaurant_id": 4
+    },
+    {
+      "id": 9,
+      "name": "Paella Valenciana",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F44%2F2021%2F06%2F04%2Fpaella-valenciana.jpg&q=60",
+      "restaurant_id": 5
+    },
+    {
+      "id": 0,
+      "name": "Tortilla",
+      "image": "https://dbarrio.com/2540-home_default/la-tortilla-lomo-piquillo-y-queso-a-escoger-pequena-o-grande.jpg",
+      "restaurant_id": 5
+    },
+    {
+      "id": 11,
+      "name": "Serranito",
+      "image": "https://insanelygoodrecipes.com/wp-content/uploads/2020/12/Spanish-Seafood-Paella.png",
+      "restaurant_id": 6
+    },
+    {
+      "id": 12,
+      "name": "Churros",
+      "image": "https://i.ytimg.com/vi/CNpFfKWLs8Q/hqdefault.jpg",
+      "restaurant_id": 6
+    },
+    {
+      "id": 13,
+      "name": "Gobi manchurian",
+      "image": "https://rainbowplantlife.com/wp-content/uploads/2022/02/Gobi-Manchurian-cover-photo-on-white-tile-1-of-1.jpg",
+      "restaurant_id": 1
+    },
+    {
+      "id": 14,
+      "name": "Butter Naan",
+      "image": "https://www.blueosa.com/wp-content/uploads/2020/07/garlic-naam.jpg",
+      "restaurant_id": 1
+    },
+    {
+      "id": 15,
+      "name": "Matar Paneer",
+      "image": "https://www.blueosa.com/wp-content/uploads/2020/07/Matar-Paneer-Peas-and-Cooked-Cottage-Cheese.jpg",
+      "restaurant_id": 1
+    },
+    {
+      "id": 16,
+      "name": "Rogan Gosh",
+      "image": "https://www.tasteofhome.com/wp-content/uploads/2021/01/Rogan-Josh-1190644860.jpg?resize=768,768",
+      "restaurant_id": 2
+    },
+    {
+      "id": 17,
+      "name": "Prawns",
+      "image": "https://yellowchilis.com/wp-content/uploads/2021/07/Prawns-fry-recipe-500x375.jpg",
+      "restaurant_id": 2
+    },
+    {
+      "id": 18,
+      "name": "Mushroom",
+      "image": "https://ministryofcurry.com/wp-content/uploads/2020/02/mushroom-masala-1-2.jpg",
+      "restaurant_id": 2
+    },
+    {
+      "id": 19,
+      "name": "Chimichurri",
+      "image": "https://blog.amigofoods.com/wp-content/uploads/2019/04/chimichurri-salsa.jpg",
+      "restaurant_id": 3
+    },
+    {
+      "id": 20,
+      "name": "Provoleta",
+      "image": "https://blog.amigofoods.com/wp-content/uploads/2019/04/provoleta-cheese.jpg",
+      "restaurant_id": 3
+    },
+    {
+      "id": 21,
+      "name": "Pionono",
+      "image": "https://blog.amigofoods.com/wp-content/uploads/2019/04/pionono-argentinian-dish.jpg",
+      "restaurant_id": 3
+    },
+    {
+      "id": 22,
+      "name": "Fugazza",
+      "image": "https://blog.amigofoods.com/wp-content/uploads/2019/04/argentinian-pizza.jpg",
+      "restaurant_id": 4
+    },
+    {
+      "id": 23,
+      "name": "Locro",
+      "image": "https://i0.wp.com/www.angsarap.net/wp-content/uploads/2018/12/Locro-Wide.jpg?ssl=1",
+      "restaurant_id": 4
+    },
+    {
+      "id": 24,
+      "name": "Pasta Frola",
+      "image": "https://irecetasfaciles.com/wp-content/uploads/2019/12/pasta-frola-una-receta-tradicional.jpg",
+      "restaurant_id": 4
+    },
+    {
+      "id": 25,
+      "name": "Albondigas",
+      "image": "https://skinnyspatula.com/wp-content/uploads/2022/11/Albondigas_Soup_Mexican_Meatballs_Soup_0-720x720.jpg",
+      "restaurant_id": 5
+    },
+    {
+      "id": 26,
+      "name": "Seafood Paella",
+      "image": "https://turkishstylecooking.com/wp-content/uploads/2021/06/deniz_urunlu_paella1.jpg",
+      "restaurant_id": 5
+    },
+    {
+      "id": 27,
+      "name": "Pizza",
+      "image": "https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg",
+      "restaurant_id": 5
+    },
+    {
+      "id": 28,
+      "name": "Omlette",
+      "image": "https://sixhungryfeet.com/wp-content/uploads/2020/10/spanish-omelette-7-500x375.jpg",
+      "restaurant_id": 6
+    },
+    {
+      "id": 29,
+      "name": "Soup",
+      "image": "https://www.chefspencil.com/wp-content/uploads/Corn-soup-.jpg",
+      "restaurant_id": 6
+    },
+    {
+      "id": 30,
+      "name": "Sushi",
+      "image": "http://genuss-verliebt.de/wp-content/uploads/Sushi-Muenchen.jpg",
+      "restaurant_id": 6
+    },
+    {
+      "id": 31,
+      "name": "Ginger Tea",
+      "image": "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/642x361-Does_Ginger_Tea_Have_Any_Bad_Side_Effects.jpg?w=1155&h=758",
+      "restaurant_id": 7
+    },
+    {
+      "id": 32,
+      "name": "Masala Tea",
+      "image": "https://assets.bonappetit.com/photos/57acca021b334044149751b5/master/pass/bas-best-masala-chai.jpg",
+      "restaurant_id": 7
+    },
+    {
+      "id": 33,
+      "name": "Cutting Tea",
+      "image": "https://qph.cf2.quoracdn.net/main-qimg-cd2b031d0a60959d40a1e10ada522dee.webp",
+      "restaurant_id": 7
+    },
+    {
+      "id": 34,
+      "name": "Kashmiri kahwa",
+      "image": "https://www.cookclickndevour.com/wp-content/uploads/2021/01/Kashmiri-kahwa-tea-recipe-2.jpg",
+      "restaurant_id": 7
+    },
+    {
+      "id": 35,
+      "name": "Irani Tea",
+      "image": "https://i.ytimg.com/vi/HtMURCxCXag/maxresdefault.jpg",
+      "restaurant_id": 7
+    },
+    {
+      "id": 36,
+      "name": "Pani Puri",
+      "image": "https://food-images.files.bbci.co.uk/food/recipes/pani_puri_90458_16x9.jpg",
+      "restaurant_id": 8
+    },
+    {
+      "id": 37,
+      "name": "Samosa",
+      "image": "https://essenrezept.de/wp-content/uploads/2020/08/Samosa-Rezept-1024x1024.jpg",
+      "restaurant_id": 8
+    },
+    {
+      "id": 38,
+      "name": "Kabab",
+      "image": "https://img-global.cpcdn.com/recipes/e406fc2174c09341/400x400cq70/photo.jpg",
+      "restaurant_id": 8
+    },
+    {
+      "id": 39,
+      "name": "Baby Conr",
+      "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2018/09/baby-corn-manchurian.jpg",
+      "restaurant_id": 8
+    },
+    {
+      "id": 40,
+      "name": "Dahi Puri",
+      "image": "https://www.whiskaffair.com/wp-content/uploads/2019/05/Dahi-Puri-2-3.jpg",
+      "restaurant_id": 8
+    },
+    {
+      "id": 41,
+      "name": "Chicken Pizza",
+      "image": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS.jpg",
+      "restaurant_id": 9
+    },
+    {
+      "id": 42,
+      "name": "Beef Burger",
+      "image": "https://embed.widencdn.net/img/beef/1akcqwmdqs/1120x840px/classic-beef-cheeseburgers-horizontal.tif?keep=c&u=7fueml",
+      "restaurant_id": 9
+    },
+    {
+      "id": 43,
+      "name": "Beef Lasani",
+      "image": "https://dev.eatclub.tv/wp-content/uploads/sites/4/2021/08/pulled-beef-burger-mit-kaesesosse-e1629373318422.jpg",
+      "restaurant_id": 9
+    },
+    {
+      "id": 44,
+      "name": "Ice Cream",
+      "image": "https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg",
+      "restaurant_id": 9
+    },
+    {
+      "id": 45,
+      "name": "Baby Conr",
+      "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2018/09/baby-corn-manchurian.jpg",
+      "restaurant_id": 9
+    },
+    {
+      "id": 46,
+      "name": "Pista",
+      "image": "https://m.media-amazon.com/images/I/71fRkM33LcL._SX679_.jpg",
+      "restaurant_id": 10
+    },
+    {
+      "id": 47,
+      "name": "Mango",
+      "image": "https://signaturescoop.ca/wp-content/uploads/2020/02/mango-ice-cream.jpg",
+      "restaurant_id": 10
+    },
+    {
+      "id": 48,
+      "name": "Falafel",
+      "image": "https://www.andreasrezepte.de/wp-content/uploads/2020/03/Falaffel2-kl.jpg",
+      "restaurant_id": 10
+    },
+    {
+      "id": 49,
+      "name": "Pista",
+      "image": "https://m.media-amazon.com/images/I/71fRkM33LcL._SX679_.jpg",
+      "restaurant_id": 10
+    },
+    {
+      "id": 50,
+      "name": "Pista",
+      "image": "https://m.media-amazon.com/images/I/71fRkM33LcL._SX679_.jpg",
+      "restaurant_id": 10
+    },
+    {
+      "id": 51,
+      "name": "Butterchicken",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2021/02/butter-chicken-ac2ff98.jpg",
+      "restaurant_id": 11
+    },
+    {
+      "id": 52,
+      "name": "Dosa",
+      "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "restaurant_id": 11
+    },
+    {
+      "id": 53,
+      "name": "Idly",
+      "image": "https://assets.cntraveller.in/photos/627a4112cbc04ca509426501/4:3/w_2932,h_2199,c_limit/Vegetarian%20South%20Indian%20breakfast%20thali%20-%20Idli%20vada%20sambar%20chutney%20-%20Image%20ID%202H3783R%20(RF).jpg",
+      "restaurant_id": 11
+    },
+    {
+      "id": 54,
+      "name": "Biryani",
+      "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/hyderabadi-biryani-recipe-chicken.jpg",
+      "restaurant_id": 11
+    },
+    {
+      "id": 55,
+      "name": "Matambre",
+      "image": "https://img-global.cpcdn.com/recipes/d3fbd47f9e5ccd23/400x400cq70/photo.jpg",
+      "restaurant_id": 11
+    },
+     {
+      "id": 56,
+      "name": "Butterchicken",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2021/02/butter-chicken-ac2ff98.jpg",
+      "restaurant_id": 12
+    },
+    {
+      "id": 57,
+      "name": "Dosa",
+      "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "restaurant_id": 12
+    },
+    {
+      "id": 58,
+      "name": "Idly",
+      "image": "https://assets.cntraveller.in/photos/627a4112cbc04ca509426501/4:3/w_2932,h_2199,c_limit/Vegetarian%20South%20Indian%20breakfast%20thali%20-%20Idli%20vada%20sambar%20chutney%20-%20Image%20ID%202H3783R%20(RF).jpg",
+      "restaurant_id": 12
+    },
+    {
+      "id": 59,
+      "name": "Biryani",
+      "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/hyderabadi-biryani-recipe-chicken.jpg",
+      "restaurant_id": 12
+    },
+    {
+      "id": 60,
+      "name": "Matambre",
+      "image": "https://img-global.cpcdn.com/recipes/d3fbd47f9e5ccd23/400x400cq70/photo.jpg",
+      "restaurant_id": 12
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "text": "Good",
+      "user": "Divya",
+      "stars": 3,
+      "restaurant_id": 1
+    },
+    {
+      "id": 2,
+      "text": "Ali",
+      "user": "Super",
+      "stars": 5,
+      "restaurant_id": 2
+    },
+    {
+      "id": 3,
+      "text": "Not good",
+      "user": "Ricky",
+      "stars": 1,
+      "restaurant_id": 3
+    },
+    {
+      "id": 4,
+      "text": "Fantastic",
+      "user": "john",
+      "stars": 5,
+      "restaurant_id": 4
+    },
+    {
+      "id": 5,
+      "text": "We can try",
+      "user": "Julian",
+      "stars": 3,
+      "restaurant_id": 5
+    },
+    {
+      "id": 6,
+      "text": "Worst",
+      "user": "Shabnam",
+      "stars": 5,
+      "restaurant_id": 6
+    },
+    {
+      "id": 7,
+      "text": "Good",
+      "user": "Divya",
+      "stars": 3,
+      "restaurant_id": 7
+    },
+    {
+      "id": 8,
+      "text": "Good",
+      "user": "Divya",
+      "stars": 3,
+      "restaurant_id": 8
+    },
+    {
+      "id": 9,
+      "text": "Good",
+      "user": "Divya",
+      "stars": 3,
+      "restaurant_id": 9
+    },
+    {
+      "id": 10,
+      "text": "Good",
+      "user": "Divya",
+      "stars": 3,
+      "restaurant_id": 10
+    },
+    {
+      "id": 11,
+      "text": "Good",
+      "user": "Divya",
+      "stars": 3,
+      "restaurant_id": 11
+    },
+    {
+      "id": 12,
+      "text": "Good",
+      "user": "Divya",
+      "stars": 3,
+      "restaurant_id": 12
+    }
+  ]
 }
+
+
+
+
+
